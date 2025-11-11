@@ -1,3 +1,3 @@
-export default function Home() {
-  return <div>AI Society</div>;
-}
+import {Home} from "@/components/home/home";
+
+export default Home;
