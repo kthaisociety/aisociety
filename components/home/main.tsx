@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ConnectSection } from "./connect/connect-section";
+import { useCarousel } from "./use-carousel";
 
 // Motion blur animation variants
 const VARIANTS_CONTAINER = {
@@ -71,37 +71,13 @@ const AI_SOCIETY_ORGANIZATIONS = [
 export { AI_SOCIETY_ORGANIZATIONS };
 
 export function Main({ currentIndex, onIndexChange }: { currentIndex: number; onIndexChange: (index: number) => void }) {
-  useEffect(() => {
-    const interval = setInterval(() => {
-      onIndexChange((currentIndex + 1) % AI_SOCIETY_ORGANIZATIONS.length);
-    }, 5000); // Change every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [currentIndex, onIndexChange]);
-
-  // Add keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        onIndexChange(
-          (currentIndex - 1 + AI_SOCIETY_ORGANIZATIONS.length) % AI_SOCIETY_ORGANIZATIONS.length
-        );
-      } else if (event.key === "ArrowRight") {
-        event.preventDefault();
-        onIndexChange((currentIndex + 1) % AI_SOCIETY_ORGANIZATIONS.length);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [currentIndex, onIndexChange]);
+  const { handleDotClick, handleDragEnd } = useCarousel(
+    currentIndex,
+    onIndexChange,
+    AI_SOCIETY_ORGANIZATIONS.length
+  );
 
   const currentOrg = AI_SOCIETY_ORGANIZATIONS[currentIndex];
-
-  const handleDotClick = (index: number) => {
-    onIndexChange(index);
-  };
 
   return (
     <motion.div 
@@ -110,6 +86,11 @@ export function Main({ currentIndex, onIndexChange }: { currentIndex: number; on
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={VARIANTS_CONTAINER}
+      drag="x"
+      dragConstraints={{ left: 0, right: 0 }}
+      dragElastic={0}
+      dragMomentum={false}
+      onDragEnd={handleDragEnd}
     >
       <div className="flex-1 flex items-center justify-center">
         <AnimatePresence mode="wait">
