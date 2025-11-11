@@ -71,7 +71,7 @@ const AI_SOCIETY_ORGANIZATIONS = [
 export { AI_SOCIETY_ORGANIZATIONS };
 
 export function Main({ currentIndex, onIndexChange }: { currentIndex: number; onIndexChange: (index: number) => void }) {
-  const { handleDotClick, handleDragEnd } = useCarousel(
+  const { handleDotClick } = useCarousel(
     currentIndex,
     onIndexChange,
     AI_SOCIETY_ORGANIZATIONS.length
@@ -86,11 +86,6 @@ export function Main({ currentIndex, onIndexChange }: { currentIndex: number; on
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={VARIANTS_CONTAINER}
-      drag="x"
-      dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={0}
-      dragMomentum={false}
-      onDragEnd={handleDragEnd}
     >
       <div className="flex-1 flex items-center justify-center">
         <AnimatePresence mode="wait">
