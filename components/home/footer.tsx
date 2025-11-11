@@ -12,7 +12,7 @@ export function Footer() {
     window.location.href = mailtoUrl;
   };
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2 px-4 py-3 sm:py-4 shrink-0 mt-auto">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2 px-4 py-2 sm:py-3 shrink-0">
       <TextScramble as="span" className="text-xs sm:text-sm font-medium font-martian-mono text-gray-900 [text-shadow:0_0_12px_rgb(255_255_255/90%),0_0_6px_rgb(255_255_255/80%)]">
         {`© ${getCurrentYear()} (AI Society)`}
       </TextScramble>
