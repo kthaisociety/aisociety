@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Header } from "@/components/home/header";
-import { Main, AI_SOCIETY_ORGANIZATIONS } from "@/components/home/main";
+import { Main } from "@/components/home/main";
+import { AI_SOCIETY_ORGANIZATIONS } from "@/components/home/constants";
 import { Footer } from "@/components/home/footer";
 import { Background } from "@/components/ui/background";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";

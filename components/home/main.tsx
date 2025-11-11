@@ -4,71 +4,9 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ConnectSection } from "./connect/connect-section";
 import { useCarousel } from "./use-carousel";
+import { AI_SOCIETY_ORGANIZATIONS, VARIANTS_CONTAINER, VARIANTS_SECTION } from "./constants";
 
-// Motion blur animation variants
-const VARIANTS_CONTAINER = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
 
-const VARIANTS_SECTION = {
-  hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
-  visible: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-  },
-};
-
-const AI_SOCIETY_ORGANIZATIONS = [
-  { 
-    id: "kthais",
-    shortName: "KTHAIS",
-    university: "KTH",
-    name: "KTH AI Society",
-    location: "Stockholm, Sweden",
-    url: "https://kthais.com",
-    logo: "/kthaisociety_logo.jpeg",
-    color: "#1751A6",
-    website: "https://kthais.com",
-    linkedin: "https://www.linkedin.com/company/kthaisociety/",
-    instagram: "https://www.instagram.com/kthaisociety/",
-  
-  },
-  {
-    id: "liuais",
-    shortName: "LIUAIS",
-    university: "Linköping University",
-    name: "LIU AI Society",
-    location: "Linköping, Sweden",
-    url: "https://liuais.com",
-    logo: "/liu-logo.jpg",
-    color: "#60a5fa",
-    website: "https://liuais.com",
-    linkedin: "https://www.linkedin.com/company/liu-ai-society/",
-    instagram: "https://www.instagram.com/liuai/",
-  },
-  {
-    id: "uuais",
-    shortName: "UUAIS",
-    university: "Uppsala University",
-    name: "UU AI Society",
-    location: "Uppsala, Sweden",
-    url: "https://www.uuais.com",
-    logo: "/uu_ai_society_logo.jpeg",
-    color: "#dc2626",
-    website: "https://www.uuais.com",
-    linkedin: "https://www.linkedin.com/company/uu-ai-society/",
-    instagram: "https://www.instagram.com/uuais/",
-  },
-];
-
-export { AI_SOCIETY_ORGANIZATIONS };
 
 export function Main({ currentIndex, onIndexChange }: { currentIndex: number; onIndexChange: (index: number) => void }) {
   const { handleDotClick } = useCarousel(
