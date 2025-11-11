@@ -1,7 +1,6 @@
 "use client";
 
 import { Magnetic } from "@/components/ui/magnetic";
-import { cn } from "@/lib/utils";
 
 interface ConnectSectionProps {
   organization: {

@@ -17,9 +17,11 @@ export function Footer() {
         {`© ${getCurrentYear()} (AI Society)`}
       </TextScramble>
       <TextScramble as="span" className="text-xs sm:text-sm font-medium font-martian-mono text-gray-900 [text-shadow:0_0_12px_rgb(255_255_255/90%),0_0_6px_rgb(255_255_255/80%)] hidden sm:inline">|</TextScramble>
-      <TextScramble as="span" className="text-xs sm:text-sm font-medium font-martian-mono text-gray-900 [text-shadow:0_0_12px_rgb(255_255_255/90%),0_0_6px_rgb(255_255_255/80%)] cursor-pointer" onClick={handleEmailClick}>
-        contact@kthais.com
-      </TextScramble>
+      <span onClick={handleEmailClick} className="cursor-pointer">
+        <TextScramble as="span" className="text-xs sm:text-sm font-medium font-martian-mono text-gray-900 [text-shadow:0_0_12px_rgb(255_255_255/90%),0_0_6px_rgb(255_255_255/80%)]">
+          contact@kthais.com
+        </TextScramble>
+      </span>
     </div>
   );
 }
