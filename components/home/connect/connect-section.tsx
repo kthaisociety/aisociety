@@ -26,7 +26,7 @@ export function ConnectSection({ organization }: ConnectSectionProps) {
             href={organization.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
+            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black font-martian-mono transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
           >
             Website
             <svg
@@ -51,7 +51,7 @@ export function ConnectSection({ organization }: ConnectSectionProps) {
             href={organization.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
+            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black font-martian-mono transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
           >
             LinkedIn
             <svg
@@ -76,7 +76,7 @@ export function ConnectSection({ organization }: ConnectSectionProps) {
             href={organization.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
+            className="group relative inline-flex shrink-0 items-center gap-px rounded-full bg-zinc-100 px-3 py-1 sm:px-3.5 sm:py-1.5 text-sm sm:text-sm text-black font-martian-mono transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50"
           >
             Instagram
             <svg
