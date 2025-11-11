@@ -2,13 +2,9 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Header } from "@/components/home/header";
-import { Main } from "@/components/home/main";
-import { AI_SOCIETY_ORGANIZATIONS } from "@/components/home/constants";
-import { Footer } from "@/components/home/footer";
+import { Header, Main, AI_SOCIETY_ORGANIZATIONS, Footer, useCarousel } from "@/components/home";
 import { Background } from "@/components/ui/background";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
-import { useCarousel } from "@/components/home/use-carousel";
 
 export function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
