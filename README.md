@@ -1,4 +1,4 @@
-# AI Society 🤖
+# AI Society 
 
 A community dedicated to the exploration, research, and continuous learning of Artificial Intelligence across Swedish universities.
 
@@ -8,7 +8,7 @@ A community dedicated to the exploration, research, and continuous learning of A
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC?style=flat-square&logo=tailwind-css)
 ![Bun](https://img.shields.io/badge/Bun-1.x-000000?style=flat-square&logo=bun)
 
-## 🌟 About
+## About
 
 This project showcases a unified platform for AI societies across multiple Swedish universities, including:
 
@@ -17,7 +17,7 @@ This project showcases a unified platform for AI societies across multiple Swedi
 - **UU AI Society** - Uppsala University  
 - **SASSE AI Society** - Stockholm School of Economics
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have installed:
 
@@ -25,7 +25,7 @@ Before you begin, ensure you have installed:
 - [Node.js](https://nodejs.org/) (v18 or higher) - optional, as Bun can replace Node
 - [Docker](https://www.docker.com/) (optional, for containerized deployment)
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository:**
 
@@ -40,7 +40,7 @@ cd ais
 bun install
 ```
 
-## 🏃 Running the Development Server
+## Running the Development Server
 
 Start the development server with hot-reload:
 
@@ -50,7 +50,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## 🏗️ Building for Production
+## Building for Production
 
 Create an optimized production build:
 
@@ -64,7 +64,7 @@ Start the production server:
 bun start
 ```
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 The project includes a multi-stage Dockerfile optimized for production deployment and a Docker Compose configuration for easy orchestration.
 
@@ -107,7 +107,7 @@ Run ESLint to check code quality:
 bun run lint
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -117,18 +117,18 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔗 Connect with AI Societies
+## Connect with AI Societies
 
 - **KTH AI Society**: [Website](https://kthais.com) | [LinkedIn](https://www.linkedin.com/company/kthaisociety/) | [Instagram](https://www.instagram.com/kthaisociety/)
 - **LIU AI Society**: [Website](https://liuais.com) | [LinkedIn](https://www.linkedin.com/company/liu-ai-society/) | [Instagram](https://www.instagram.com/liuaisociety)
 - **UU AI Society**: [Website](https://www.uuais.com) | [LinkedIn](https://www.linkedin.com/company/uu-ai-society/) | [Instagram](https://www.instagram.com/uuaisociety)
 - **SASSE AI Society**: [LinkedIn](https://www.linkedin.com/company/sasse-ai-society)
 
-## 💬 Support
+## Support
 
 For questions or support, please reach out to the respective AI society through their social media channels or contact@kthais.com.
 
